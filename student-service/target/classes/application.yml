@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://172.22.99.159:3306/dhanu_sms?createDatabaseIfNotExist=true
+    username: root
+    password: 1qaz2wsx@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+  security:
+    oauth2:
+      client:
+        client-id: Web
+        client-secret: web
+      resource:
+        token-info-uri: http://localhost:8082/oauth/check_token
+        
+          
